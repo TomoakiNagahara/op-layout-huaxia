@@ -17,8 +17,8 @@ use OP\UNIT\APP;
 
 //	...
 $layout   = Config::Get('layout')['name'] ?? null;
-$hash_js  = Unit('WebPack')->FileContentHash('js');
-$hash_css = Unit('WebPack')->FileContentHash('css');
+$hash_js  = Unit('WebPack')->Hash('js');
+$hash_css = Unit('WebPack')->Hash('css');
 
 ?>
 <!doctype html>
