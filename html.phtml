@@ -13,7 +13,6 @@ namespace OP;
 /** use
  *
  */
-use OP\UNIT\APP;
 
 //	...
 $layout   = Config::Get('layout')['name'] ?? null;
@@ -47,5 +46,5 @@ $hash_css = Unit('WebPack')->Hash('css');
 <?php endif; ?>
 
 </head>
-	<?php \OP\Content() ?>
+	<?php \OP\UNIT\App::Content() ?>
 </html>
